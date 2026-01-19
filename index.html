@@ -3,19 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skillforge Academy: The Complete Language of Price</title>
+    <title>Skillforge Academy: The Complete Language of Price (Visual Edition)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google AdMob/AdSense Logic -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-app-pub-2721550122953654" crossorigin="anonymous"></script>
     <script>
-        // AdMob Configuration
-        const AD_CONFIG = {
-            appId: "ca-app-pub-2721550122953654~4839732781",
-            slotId: "7862671315"
-        };
-
-        // Initialize ads once DOM is ready
         window.onload = function() {
             (adsbygoogle = window.adsbygoogle || []).push({});
             (adsbygoogle = window.adsbygoogle || []).push({});
@@ -34,195 +27,252 @@
         }
 
         .text-gold { color: #fbbf24; }
+        .text-neon-blue { color: #38bdf8; }
 
         .section-card {
             background: #0f172a;
             border-radius: 2.5rem;
-            padding: 4rem;
-            margin-bottom: 6rem;
+            padding: 4rem 2rem;
+            margin-bottom: 4rem;
             border: 1px solid #1e293b;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
         }
 
-        .chart-container {
+        .diagram-container {
             background: #000000;
-            border: 3px solid #1e293b;
-            border-radius: 2rem;
-            padding: 3rem;
-            margin: 2.5rem 0;
+            border: 2px solid #1e293b;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            margin: 2rem 0;
             position: relative;
             overflow: hidden;
         }
 
-        .simple-badge {
-            display: inline-block;
-            padding: 10px 24px;
-            border-radius: 12px;
-            font-size: 0.9rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-            margin-bottom: 2rem;
+        .pro-box {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            border-left: 4px solid #fbbf24;
+            padding: 2rem;
+            border-radius: 0.5rem 1.5rem 1.5rem 0.5rem;
+            margin: 2rem 0;
         }
 
-        .quiz-box {
-            background: #1e293b;
-            border-left: 8px solid #fbbf24;
-            padding: 2.5rem;
-            border-radius: 0 2rem 2rem 0;
-            margin-top: 4rem;
-        }
-
-        .lesson-text {
-            font-size: 1.15rem;
-            color: #cbd5e1;
-            margin-bottom: 1.5rem;
-        }
-
-        /* Ad Unit Styling - Ensuring ads look integrated */
         .ad-wrapper {
             margin: 3rem auto;
             text-align: center;
-            overflow: hidden;
-            min-height: 90px;
-            background: rgba(15, 23, 42, 0.5);
-            border-radius: 1rem;
-            border: 1px solid rgba(30, 41, 59, 0.5);
+            min-height: 120px;
+            background: rgba(15, 23, 42, 0.8);
+            border-radius: 1.5rem;
+            border: 1px dashed #334155;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         .ad-label {
-            font-size: 9px;
-            color: #475569;
+            font-size: 10px;
+            color: #fbbf24;
+            font-weight: 800;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            padding: 8px;
-            display: block;
+            letter-spacing: 3px;
+            padding-bottom: 10px;
         }
 
-        h2 { font-weight: 900; letter-spacing: -0.03em; line-height: 1.1; }
+        h2 { font-weight: 900; letter-spacing: -0.04em; }
+        .highlight { color: #fbbf24; font-weight: 900; }
+        
+        .concept-tag {
+            background: #1e293b;
+            color: #fbbf24;
+            padding: 4px 12px;
+            border-radius: 99px;
+            font-size: 10px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid rgba(251, 191, 36, 0.2);
+        }
     </style>
 </head>
-<body class="p-4 md:p-20 max-w-6xl mx-auto">
+<body class="p-4 md:p-20 max-w-5xl mx-auto">
 
-    <!-- HERO SECTION -->
+    <!-- HERO -->
     <header class="text-center mb-16">
         <div class="inline-block px-8 py-3 rounded-full border border-yellow-500/30 bg-yellow-500/10 text-yellow-500 text-sm font-black mb-10 uppercase tracking-[0.5em]">
-            Week 2 Masterclass • Skillforge Academy
+            Institutional Decoding
         </div>
-        <h1 class="text-7xl md:text-9xl font-black mb-10 tracking-tighter leading-[0.9]">
-            MASTERING <br><span class="text-gold italic">PRICE ACTION</span>.
+        <h1 class="text-6xl md:text-8xl font-black mb-10 tracking-tighter leading-tight">
+            THE ALGORITHM'S <br><span class="text-gold">FOOTPRINTS.</span>
         </h1>
+        <p class="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
+            Market structure is not a "theory." It is the visual manifestation of institutional buy and sell orders hitting the digital ledger.
+        </p>
     </header>
 
-    <!-- AD PLACEMENT 1: HEADER -->
+    <!-- AD PLACEMENT 1: TOP -->
     <div class="ad-wrapper">
-        <span class="ad-label">Advertisement</span>
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-app-pub-2721550122953654"
-             data-ad-slot="7862671315"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
+        <span class="ad-label">Sponsor: Skillforge Digital Partners</span>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-app-pub-2721550122953654" data-ad-slot="7862671315" data-ad-format="auto"></ins>
     </div>
 
-    <!-- SECTION 1: CANDLESTICKS -->
+    <!-- MODULE 01: CANDLESTICK PSYCHOLOGY -->
     <section class="section-card">
-        <div class="simple-badge bg-yellow-500/20 text-yellow-400">Level 1: The Microscope</div>
-        <h2 class="text-5xl md:text-6xl mb-10">Candle Storytelling</h2>
+        <div class="flex items-center gap-3 mb-6">
+            <span class="concept-tag">Lesson 2.1</span>
+            <span class="text-slate-500 font-bold text-xs uppercase tracking-widest">Anatomy of the Candle</span>
+        </div>
+        <h2 class="text-4xl mb-6">Decoding the "Battle Report"</h2>
+        <p class="text-slate-400 mb-8">
+            Think of a single candlestick as a <strong>time-compressed summary</strong> of a war. The body shows who conquered the territory, while the wicks show where the enemy (counter-party liquidity) was too strong to overcome.
+        </p>
         
-        <div class="lesson-text">
-            <p class="mb-6">At Skillforge, we don't care if a candle is green or red. We care about <strong>Pressure</strong>. A candle is simply a visual representation of a battle between the Algorithm and the Available Orders.</p>
-            <p class="mb-6 italic text-slate-400 border-l-4 border-slate-700 pl-4">"The Body tells you where the price survived. The Wick tells you where the price was murdered."</p>
-        </div>
-
-        <div class="grid lg:grid-cols-3 gap-10 mt-16">
-            <div class="chart-container flex flex-col items-center border-green-500/30">
-                <span class="bg-green-500 text-black px-3 py-1 rounded text-[10px] font-black mb-6 uppercase tracking-tighter">The Boss (Momentum)</span>
-                <svg viewBox="0 0 100 220" class="h-56">
-                    <rect x="25" y="20" width="50" height="180" fill="#22c55e" rx="4" />
-                </svg>
-                <div class="mt-8 text-center">
-                    <h4 class="text-xl font-black text-white italic">"Maximum Intent"</h4>
-                </div>
-            </div>
-
-            <div class="chart-container flex flex-col items-center border-yellow-500/30">
-                <span class="bg-yellow-500 text-black px-3 py-1 rounded text-[10px] font-black mb-6 uppercase tracking-tighter">The Reject (Wick)</span>
-                <svg viewBox="0 0 100 220" class="h-56">
-                    <line x1="50" y1="10" x2="50" y2="110" stroke="#fbbf24" stroke-width="5" />
-                    <rect x="25" y="110" width="50" height="40" fill="#ef4444" rx="4" />
-                </svg>
-                <div class="mt-8 text-center">
-                    <h4 class="text-xl font-black text-white italic">"Price Rejection"</h4>
-                </div>
-            </div>
-
-            <div class="chart-container flex flex-col items-center border-slate-500/30">
-                <span class="bg-slate-500 text-black px-3 py-1 rounded text-[10px] font-black mb-6 uppercase tracking-tighter">The Nap (Doji)</span>
-                <svg viewBox="0 0 100 220" class="h-56">
-                    <rect x="25" y="100" width="50" height="20" fill="#94a3b8" rx="2" />
-                    <line x1="50" y1="30" x2="50" y2="190" stroke="#64748b" stroke-width="2" />
-                </svg>
-                <div class="mt-8 text-center">
-                    <h4 class="text-xl font-black text-white italic">"Indecision"</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AD PLACEMENT 2: MID-CONTENT -->
-    <div class="ad-wrapper">
-        <span class="ad-label">Advertisement</span>
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-app-pub-2721550122953654"
-             data-ad-slot="7862671315"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-    </div>
-
-    <!-- SECTION 2: THE STAIRCASE -->
-    <section class="section-card">
-        <div class="simple-badge bg-blue-500/20 text-blue-400">Level 2: The Structure</div>
-        <h2 class="text-5xl md:text-6xl mb-10">The Staircase Logic</h2>
-        
-        <div class="lesson-text">
-            <p class="mb-6">Market structure is the only thing that matters. We use the <strong>HH (Higher High)</strong> and <strong>HL (Higher Low)</strong> system to identify the trend.</p>
-        </div>
-
-        <div class="chart-container">
+        <div class="diagram-container">
             <svg viewBox="0 0 800 400" class="w-full">
-                <path d="M 50 350 L 200 150 L 320 280 L 500 80 L 620 200 L 750 30" fill="none" stroke="#22c55e" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
-                <g transform="translate(200, 150)"><circle r="15" fill="#22c55e" /><text y="-35" text-anchor="middle" fill="#22c55e" font-size="20" font-weight="900">HH</text></g>
-                <g transform="translate(320, 280)"><rect x="-75" y="30" width="150" height="50" fill="#064e3b" rx="12" /><text y="62" text-anchor="middle" fill="#10b981" font-size="16" font-weight="900">HL (FLOOR)</text></g>
+                <!-- Bullish Detail -->
+                <line x1="200" y1="40" x2="200" y2="360" stroke="#22c55e" stroke-width="2" />
+                <rect x="150" y="100" width="100" height="200" fill="#22c55e" fill-opacity="0.1" stroke="#22c55e" stroke-width="4"/>
+                
+                <!-- Labels -->
+                <circle cx="200" cy="40" r="4" fill="#22c55e"/>
+                <text x="215" y="45" fill="#22c55e" font-size="11" font-weight="900">HIGH: Institutional Exhaustion</text>
+                
+                <text x="260" y="105" fill="#f1f5f9" font-size="12" font-weight="bold">CLOSE: Bulls Secured Territory</text>
+                <text x="260" y="305" fill="#f1f5f9" font-size="12" font-weight="bold">OPEN: Battle Commenced</text>
+
+                <circle cx="200" cy="360" r="4" fill="#22c55e"/>
+                <text x="215" y="365" fill="#22c55e" font-size="11" font-weight="900">LOW: Liquidity Grabbed</text>
+
+                <!-- Bearish Detail -->
+                <line x1="550" y1="40" x2="550" y2="360" stroke="#ef4444" stroke-width="2" />
+                <rect x="500" y="100" width="100" height="200" fill="#ef4444" fill-opacity="0.1" stroke="#ef4444" stroke-width="4"/>
+                
+                <text x="560" y="105" fill="#f1f5f9" font-size="12" font-weight="bold">OPEN: Sellers In Control</text>
+                <text x="560" y="305" fill="#f1f5f9" font-size="12" font-weight="bold">CLOSE: Price Suppressed</text>
             </svg>
         </div>
 
-        <div class="quiz-box border-blue-500">
-            <h4 class="text-blue-400 font-black text-2xl mb-6">Mastery Check</h4>
-            <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-800">
-                <p class="font-bold text-white mb-3 italic">Q: Price just broke below your last HL. What happened?</p>
-                <p class="mt-4 text-xs font-black text-red-500 uppercase tracking-widest">Answer: BOS (Break of Structure)</p>
+        <div class="pro-box">
+            <h4 class="text-gold font-black mb-4 uppercase tracking-tighter">The Flawless Logic of Wicks:</h4>
+            <div class="grid md:grid-cols-2 gap-6 text-sm">
+                <div>
+                    <strong class="text-green-500 uppercase">Lower Wicks:</strong> These are not just lines; they are "V-Shape" rejections. They prove that the algorithm reached down to find buy orders (liquidity) and instantly moved away.
+                </div>
+                <div>
+                    <strong class="text-red-500 uppercase">Upper Wicks:</strong> These prove that the "Ceiling" of orders was too heavy for price to break. We call this "Supply Overload."
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- AD PLACEMENT 3: FOOTER -->
+    <!-- AD PLACEMENT 2: MIDDLE -->
     <div class="ad-wrapper">
-        <span class="ad-label">Advertisement</span>
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-app-pub-2721550122953654"
-             data-ad-slot="7862671315"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
+        <span class="ad-label">Skillforge Educational Advertisement</span>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-app-pub-2721550122953654" data-ad-slot="7862671315" data-ad-format="auto"></ins>
     </div>
 
+    <!-- MODULE 02: MARKET STRUCTURE MECHANICS -->
+    <section class="section-card">
+        <div class="flex items-center gap-3 mb-6">
+            <span class="concept-tag">Lesson 2.2</span>
+            <span class="text-slate-500 font-bold text-xs uppercase tracking-widest">Trend Identification</span>
+        </div>
+        <h2 class="text-4xl mb-6">The Pulse: HH, HL, LH, LL</h2>
+        <p class="text-slate-400 mb-8">
+            Market structure is the ONLY thing that tells you which way to trade. If the structure is Bullish, you only look for Buy entries at the "Discount" (Higher Low). If it's Bearish, you only Sell at the "Premium" (Lower High).
+        </p>
+
+        <div class="diagram-container">
+            <svg viewBox="0 0 800 400" class="w-full">
+                <!-- Bullish Path -->
+                <path d="M 50 350 L 150 200 L 220 280 L 350 100 L 420 180 L 550 20" fill="none" stroke="#22c55e" stroke-width="3" stroke-dasharray="5,5" opacity="0.4" />
+                
+                <!-- Bullish Nodes -->
+                <g class="node">
+                    <circle cx="150" cy="200" r="8" fill="#22c55e"/>
+                    <text x="140" y="180" fill="#22c55e" font-weight="900" font-size="16">HH</text>
+                    <text x="120" y="220" fill="#475569" font-size="9">Higher High</text>
+                </g>
+                
+                <g class="node">
+                    <circle cx="220" cy="280" r="8" fill="#fbbf24"/>
+                    <text x="210" y="315" fill="#fbbf24" font-weight="900" font-size="16">HL</text>
+                    <text x="180" y="335" fill="#fbbf24" font-size="10" font-weight="bold">ENTRY ZONE</text>
+                </g>
+
+                <g class="node">
+                    <circle cx="350" cy="100" r="8" fill="#22c55e"/>
+                    <text x="340" y="80" fill="#22c55e" font-weight="900" font-size="16">HH</text>
+                </g>
+
+                <!-- Bearish Transition -->
+                <path d="M 550 20 L 650 320 L 720 220 L 780 380" fill="none" stroke="#ef4444" stroke-width="3" />
+                
+                <g class="node">
+                    <circle cx="650" cy="320" r="8" fill="#ef4444"/>
+                    <text x="640" y="350" fill="#ef4444" font-weight="900" font-size="16">LL</text>
+                    <text x="620" y="370" fill="#475569" font-size="9">Lower Low</text>
+                </g>
+
+                <g class="node">
+                    <circle cx="720" cy="220" r="8" fill="#fbbf24"/>
+                    <text x="710" y="200" fill="#fbbf24" font-weight="900" font-size="16">LH</text>
+                    <text x="680" y="180" fill="#fbbf24" font-size="10" font-weight="bold">ENTRY ZONE</text>
+                </g>
+            </svg>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-slate-900/80 p-8 rounded-3xl border border-green-500/20 shadow-lg">
+                <h4 class="text-green-500 font-black mb-4 flex items-center gap-2">
+                    <span>UPTREND</span>
+                    <span class="text-[10px] bg-green-500/10 px-2 py-1 rounded">HH + HL</span>
+                </h4>
+                <p class="text-sm text-slate-300 mb-4">The market is "stepping" up. Every pull back is simply the algorithm re-loading its buy orders.</p>
+                <div class="text-xs font-black text-green-400 bg-green-400/5 p-4 rounded-xl border border-green-400/10">
+                    GOLDEN RULE: Do not Sell an Uptrend. Wait for the HL.
+                </div>
+            </div>
+
+            <div class="bg-slate-900/80 p-8 rounded-3xl border border-red-500/20 shadow-lg">
+                <h4 class="text-red-500 font-black mb-4 flex items-center gap-2">
+                    <span>DOWNTREND</span>
+                    <span class="text-[10px] bg-red-500/10 px-2 py-1 rounded">LH + LL</span>
+                </h4>
+                <p class="text-sm text-slate-300 mb-4">The market is "cascading" down. Gravity is fueled by supply and fear. Bounces are fake.</p>
+                <div class="text-xs font-black text-red-400 bg-red-400/5 p-4 rounded-xl border border-red-400/10">
+                    GOLDEN RULE: Do not Buy a Downtrend. Wait for the LH.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AD PLACEMENT 3: BOTTOM -->
+    <div class="ad-wrapper">
+        <span class="ad-label">Support Skillforge Academy Free Training</span>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-app-pub-2721550122953654" data-ad-slot="7862671315" data-ad-format="auto"></ins>
+    </div>
+
+    <!-- FINAL SUMMARY BOX -->
+    <section class="mb-20">
+        <div class="bg-gold/10 border border-gold/30 p-10 rounded-[3rem] text-center">
+            <h3 class="text-2xl font-black mb-4 uppercase text-gold italic">The Flawless Conclusion</h3>
+            <p class="text-slate-300 max-w-3xl mx-auto leading-relaxed">
+                Successful trading is 90% waiting and 10% execution. If you can see the <strong>HL</strong> in an uptrend or the <strong>LH</strong> in a downtrend, you have found the only "Safe" places to enter the market. The rest is just noise.
+            </p>
+        </div>
+    </section>
+
     <!-- FOOTER -->
-    <footer class="text-center py-20 border-t border-slate-800">
-        <p class="text-slate-500 text-sm font-black tracking-widest uppercase">Skillforge Digital • O. J. Alonge</p>
+    <footer class="text-center py-20 border-t border-slate-900">
+        <p class="text-slate-500 text-sm font-black tracking-widest uppercase mb-4">Skillforge Digital • O. J. Alonge</p>
+        <div class="flex justify-center gap-6 text-slate-700 text-[10px] uppercase font-bold tracking-widest">
+            <span>Market Integrity</span>
+            <span>Algorithmic Precision</span>
+            <span>Financial Freedom</span>
+        </div>
     </footer>
 
 </body>
 </html>
+
 
