@@ -5,13 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skillforge Academy: The Complete Language of Price</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- AdMob Integration Configuration -->
+    
+    <!-- Google AdMob/AdSense Logic -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-app-pub-2721550122953654" crossorigin="anonymous"></script>
     <script>
-        const ADMOB_CONFIG = {
+        // AdMob Configuration
+        const AD_CONFIG = {
             appId: "ca-app-pub-2721550122953654~4839732781",
-            bannerId: "ca-app-pub-2721550122953654/7862671315"
+            slotId: "7862671315"
+        };
+
+        // Initialize ads once DOM is ready
+        window.onload = function() {
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            (adsbygoogle = window.adsbygoogle || []).push({});
         };
     </script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
         
@@ -68,39 +79,24 @@
             margin-bottom: 1.5rem;
         }
 
-        /* Ad Unit Styling */
-        .ad-container {
-            background: #0f172a;
-            border: 1px solid #1e293b;
-            padding: 1rem;
-            margin: 3rem 0;
+        /* Ad Unit Styling - Ensuring ads look integrated */
+        .ad-wrapper {
+            margin: 3rem auto;
             text-align: center;
+            overflow: hidden;
+            min-height: 90px;
+            background: rgba(15, 23, 42, 0.5);
             border-radius: 1rem;
+            border: 1px solid rgba(30, 41, 59, 0.5);
         }
 
         .ad-label {
-            font-size: 10px;
+            font-size: 9px;
             color: #475569;
             text-transform: uppercase;
             letter-spacing: 2px;
-            margin-bottom: 0.5rem;
+            padding: 8px;
             display: block;
-        }
-
-        .ad-slot-mock {
-            background: #1e293b;
-            height: 90px;
-            width: 100%;
-            max-width: 728px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #94a3b8;
-            font-size: 12px;
-            border: 1px dashed #334155;
-            border-radius: 4px;
-            font-family: monospace;
         }
 
         h2 { font-weight: 900; letter-spacing: -0.03em; line-height: 1.1; }
@@ -119,11 +115,14 @@
     </header>
 
     <!-- AD PLACEMENT 1: HEADER -->
-    <div class="ad-container">
-        <span class="ad-label">Skill Ad Placement</span>
-        <div class="ad-slot-mock">
-            Unit ID: ca-app-pub-2721550122953654/7862671315
-        </div>
+    <div class="ad-wrapper">
+        <span class="ad-label">Advertisement</span>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-app-pub-2721550122953654"
+             data-ad-slot="7862671315"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
     </div>
 
     <!-- SECTION 1: CANDLESTICKS -->
@@ -137,7 +136,6 @@
         </div>
 
         <div class="grid lg:grid-cols-3 gap-10 mt-16">
-            <!-- MOMENTUM -->
             <div class="chart-container flex flex-col items-center border-green-500/30">
                 <span class="bg-green-500 text-black px-3 py-1 rounded text-[10px] font-black mb-6 uppercase tracking-tighter">The Boss (Momentum)</span>
                 <svg viewBox="0 0 100 220" class="h-56">
@@ -145,53 +143,42 @@
                 </svg>
                 <div class="mt-8 text-center">
                     <h4 class="text-xl font-black text-white italic">"Maximum Intent"</h4>
-                    <p class="text-xs text-slate-500 mt-2">The Algorithm has a target and is moving fast.</p>
                 </div>
             </div>
 
-            <!-- REJECTION -->
             <div class="chart-container flex flex-col items-center border-yellow-500/30">
                 <span class="bg-yellow-500 text-black px-3 py-1 rounded text-[10px] font-black mb-6 uppercase tracking-tighter">The Reject (Wick)</span>
                 <svg viewBox="0 0 100 220" class="h-56">
                     <line x1="50" y1="10" x2="50" y2="110" stroke="#fbbf24" stroke-width="5" />
                     <rect x="25" y="110" width="50" height="40" fill="#ef4444" rx="4" />
-                    <line x1="50" y1="150" x2="50" y2="200" stroke="#475569" stroke-width="2" />
                 </svg>
                 <div class="mt-8 text-center">
                     <h4 class="text-xl font-black text-white italic">"Price Rejection"</h4>
-                    <p class="text-xs text-slate-500 mt-2">The price entered a zone it wasn't allowed to stay in.</p>
                 </div>
             </div>
 
-            <!-- INDECISION -->
             <div class="chart-container flex flex-col items-center border-slate-500/30">
                 <span class="bg-slate-500 text-black px-3 py-1 rounded text-[10px] font-black mb-6 uppercase tracking-tighter">The Nap (Doji)</span>
                 <svg viewBox="0 0 100 220" class="h-56">
-                    <line x1="50" y1="30" x2="50" y2="190" stroke="#64748b" stroke-width="2" />
                     <rect x="25" y="100" width="50" height="20" fill="#94a3b8" rx="2" />
+                    <line x1="50" y1="30" x2="50" y2="190" stroke="#64748b" stroke-width="2" />
                 </svg>
                 <div class="mt-8 text-center">
                     <h4 class="text-xl font-black text-white italic">"Indecision"</h4>
-                    <p class="text-xs text-slate-500 mt-2">The market is 'reloading'. Do not trade until a Boss appears.</p>
                 </div>
-            </div>
-        </div>
-
-        <div class="quiz-box">
-            <h4 class="text-gold font-black text-2xl mb-6">Interactive Quiz: Volume 1</h4>
-            <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-800">
-                <p class="font-bold text-white mb-3 italic">Q: You see a massive wick at the top of a resistance zone, but the body is red. Who is in control?</p>
-                <p class="mt-4 text-xs font-black text-green-500 uppercase tracking-widest">Correct Logic: Sellers have successfully defended the zone.</p>
             </div>
         </div>
     </section>
 
     <!-- AD PLACEMENT 2: MID-CONTENT -->
-    <div class="ad-container">
-        <span class="ad-label">Skill Ad Placement</span>
-        <div class="ad-slot-mock">
-            Unit ID: ca-app-pub-2721550122953654/7862671315
-        </div>
+    <div class="ad-wrapper">
+        <span class="ad-label">Advertisement</span>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-app-pub-2721550122953654"
+             data-ad-slot="7862671315"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
     </div>
 
     <!-- SECTION 2: THE STAIRCASE -->
@@ -200,36 +187,35 @@
         <h2 class="text-5xl md:text-6xl mb-10">The Staircase Logic</h2>
         
         <div class="lesson-text">
-            <p class="mb-6">Market structure is the only thing that matters. We use the <strong>HH (Higher High)</strong> and <strong>HL (Higher Low)</strong> system to identify the trend. Think of the HL as a floor that the price has promised not to break.</p>
+            <p class="mb-6">Market structure is the only thing that matters. We use the <strong>HH (Higher High)</strong> and <strong>HL (Higher Low)</strong> system to identify the trend.</p>
         </div>
 
         <div class="chart-container">
-            <h4 class="text-center text-green-500 font-black mb-10 uppercase tracking-[0.3em]">Expansion vs Retracement</h4>
             <svg viewBox="0 0 800 400" class="w-full">
                 <path d="M 50 350 L 200 150 L 320 280 L 500 80 L 620 200 L 750 30" fill="none" stroke="#22c55e" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
-                <g transform="translate(200, 150)"><circle r="15" fill="#22c55e" /><text y="-35" text-anchor="middle" fill="#22c55e" font-size="20" font-weight="900">HH (NEW PEAK)</text></g>
-                <g transform="translate(320, 280)">
-                    <rect x="-75" y="30" width="150" height="50" fill="#064e3b" rx="12" />
-                    <text y="62" text-anchor="middle" fill="#10b981" font-size="16" font-weight="900">HL (THE FLOOR)</text>
-                </g>
+                <g transform="translate(200, 150)"><circle r="15" fill="#22c55e" /><text y="-35" text-anchor="middle" fill="#22c55e" font-size="20" font-weight="900">HH</text></g>
+                <g transform="translate(320, 280)"><rect x="-75" y="30" width="150" height="50" fill="#064e3b" rx="12" /><text y="62" text-anchor="middle" fill="#10b981" font-size="16" font-weight="900">HL (FLOOR)</text></g>
             </svg>
         </div>
 
         <div class="quiz-box border-blue-500">
-            <h4 class="text-blue-400 font-black text-2xl mb-6">Interactive Quiz: Volume 2</h4>
+            <h4 class="text-blue-400 font-black text-2xl mb-6">Mastery Check</h4>
             <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-800">
-                <p class="font-bold text-white mb-3 italic">Q: Price just broke below your last HL. What is the name of this event?</p>
-                <p class="mt-4 text-xs font-black text-red-500 uppercase tracking-widest">Correct Answer: BOS (Break of Structure)</p>
+                <p class="font-bold text-white mb-3 italic">Q: Price just broke below your last HL. What happened?</p>
+                <p class="mt-4 text-xs font-black text-red-500 uppercase tracking-widest">Answer: BOS (Break of Structure)</p>
             </div>
         </div>
     </section>
 
     <!-- AD PLACEMENT 3: FOOTER -->
-    <div class="ad-container">
-        <span class="ad-label">Skill Ad Placement</span>
-        <div class="ad-slot-mock">
-            Unit ID: ca-app-pub-2721550122953654/7862671315
-        </div>
+    <div class="ad-wrapper">
+        <span class="ad-label">Advertisement</span>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-app-pub-2721550122953654"
+             data-ad-slot="7862671315"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
     </div>
 
     <!-- FOOTER -->
@@ -239,5 +225,4 @@
 
 </body>
 </html>
-
 
